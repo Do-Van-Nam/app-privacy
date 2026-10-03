@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovy – Chính sách quyền riêng tư</title>
+  <meta name="description" content="Chính sách quyền riêng tư của ứng dụng Lovy – ứng dụng lưu giữ kỷ niệm dành cho các cặp đôi. Privacy Policy for the Lovy app.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFF9FA;
+      --surface: #FFFFFF;
+      --text: #1B1C1C;
+      --text-soft: #514345;
+      --muted: #8A7B7E;
+      --accent: #EC4899;
+      --accent-strong: #C42D7A;
+      --accent-tint: #FDF2F8;
+      --border: #F3E1E8;
+      --shadow: 0 8px 32px rgba(236, 72, 153, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #171314;
+        --surface: #211B1D;
+        --text: #F5EEF0;
+        --text-soft: #D5C7CB;
+        --muted: #A3959A;
+        --accent: #F472B6;
+        --accent-strong: #F9A8D4;
+        --accent-tint: #2C1E25;
+        --border: #3A2C32;
+        --shadow: none;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #171314;
+      --surface: #211B1D;
+      --text: #F5EEF0;
+      --text-soft: #D5C7CB;
+      --muted: #A3959A;
+      --accent: #F472B6;
+      --accent-strong: #F9A8D4;
+      --accent-tint: #2C1E25;
+      --border: #3A2C32;
+      --shadow: none;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-strong); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      padding: 40px 0 8px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+    }
+
+    .brand svg { width: 28px; height: 28px; flex: none; }
+
+    .lang {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      padding: 3px;
+    }
+
+    .lang button {
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      min-height: 32px;
+    }
+
+    .lang button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.25;
+      margin: 28px 0 8px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .summary {
+      margin: 28px 0 8px;
+      padding: 20px 22px;
+      background: var(--accent-tint);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .summary strong { display: block; margin-bottom: 6px; color: var(--accent-strong); }
+    .summary ul { margin: 0; padding-left: 20px; }
+    .summary li { margin: 4px 0; }
+
+    main section {
+      margin: 32px 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.35;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 18px 0 6px;
+    }
+
+    p, li { color: var(--text-soft); }
+    p { margin: 0 0 12px; }
+    ul { padding-left: 22px; margin: 0 0 12px; }
+    li { margin: 6px 0; }
+    li strong, p strong { color: var(--text); }
+
+    .table-wrap { overflow-x: auto; margin: 8px 0 12px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th { font-weight: 700; color: var(--text); background: var(--accent-tint); }
+    td { color: var(--text-soft); }
+    tr:last-child td { border-bottom: 0; }
+
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact p:last-child { margin-bottom: 0; }
+
+    footer {
+      padding: 24px 0 48px;
+      color: var(--muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    /* Language switching: Vietnamese is shown by default (also without JS). */
+    [lang="en"].i18n { display: none; }
+    html.en [lang="vi"].i18n { display: none; }
+    html.en [lang="en"].i18n { display: block; }
+
+    @media (max-width: 480px) {
+      header { padding-top: 24px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top">
+        <div class="brand" aria-label="Lovy">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 21s-7.5-4.6-10-9.3C.4 8.6 2.1 4.5 6 4.1c2.2-.2 3.9.9 6 3.1 2.1-2.2 3.8-3.3 6-3.1 3.9.4 5.6 4.5 4 7.6C19.5 16.4 12 21 12 21z"/>
+          </svg>
+          Lovy
+        </div>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="vi" aria-pressed="true">Tiếng Việt</button>
+          <button type="button" data-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== TIẾNG VIỆT ===================== -->
+    <main class="i18n" lang="vi">
+      <h1>Chính sách quyền riêng tư</h1>
+      <p class="meta">Có hiệu lực từ ngày 03/10/2026 · Cập nhật lần cuối: 03/10/2026</p>
+
+      <div class="summary">
+        <strong>Tóm tắt</strong>
+        <ul>
+          <li>Lovy <strong>không yêu cầu tạo tài khoản</strong> và <strong>không có máy chủ</strong> lưu dữ liệu của bạn.</li>
+          <li>Mọi thông tin và hình ảnh bạn nhập chỉ được <strong>lưu trên thiết bị của bạn</strong>.</li>
+          <li>Chúng tôi <strong>không thu thập, không bán và không chia sẻ</strong> dữ liệu cá nhân của bạn.</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>1. Giới thiệu</h2>
+        <p>Chính sách này mô tả cách ứng dụng <strong>Lovy</strong> (“Ứng dụng”), do <strong>JustCode</strong> (“chúng tôi”) phát triển, xử lý thông tin của bạn. Lovy là ứng dụng giúp các cặp đôi lưu giữ kỷ niệm, đếm ngày yêu và lưu lại những khoảnh khắc đáng nhớ.</p>
+        <p>Khi sử dụng Ứng dụng, bạn đồng ý với các nội dung trong chính sách này.</p>
+      </section>
+
+      <section>
+        <h2>2. Thông tin bạn nhập vào Ứng dụng</h2>
+        <p>Để sử dụng các tính năng, bạn có thể nhập những thông tin sau:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Loại thông tin</th><th>Ví dụ</th><th>Mục đích</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hồ sơ cặp đôi</td>
+                <td>Tên, biệt danh, ngày sinh, ảnh đại diện của bạn và người ấy; ngày bắt đầu yêu</td>
+                <td>Hiển thị hồ sơ, đếm ngày yêu, hiển thị các ngày đặc biệt</td>
+              </tr>
+              <tr>
+                <td>Kỷ niệm</td>
+                <td>Tiêu đề, ngày, ghi chú, ảnh</td>
+                <td>Lưu và hiển thị nhật ký kỷ niệm của bạn</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Toàn bộ thông tin này được <strong>lưu cục bộ trên thiết bị của bạn</strong>. Chúng tôi không vận hành máy chủ nào để nhận hoặc lưu trữ dữ liệu này, vì vậy chúng tôi <strong>không thể xem, truy cập hay khôi phục</strong> dữ liệu của bạn.</p>
+        <p>Ứng dụng không thu thập vị trí, danh bạ, số điện thoại, thông tin thanh toán hay mã định danh quảng cáo.</p>
+      </section>
+
+      <section>
+        <h2>3. Quyền truy cập trên thiết bị</h2>
+        <ul>
+          <li><strong>Máy ảnh (Camera):</strong> để bạn chụp ảnh ngay trong Ứng dụng và lưu vào kỷ niệm. Ảnh được xử lý trên thiết bị và không được gửi đi đâu. Ứng dụng không ghi âm.</li>
+          <li><strong>Chọn ảnh:</strong> Ứng dụng dùng trình chọn ảnh của hệ thống. Ứng dụng chỉ nhận được những ảnh bạn chủ động chọn, không truy cập toàn bộ thư viện ảnh của bạn.</li>
+          <li><strong>Internet và trạng thái mạng:</strong> để hiển thị nội dung và mở các liên kết bạn chọn (ví dụ trang web hoặc cửa hàng ứng dụng). Ứng dụng không dùng kết nối mạng để gửi dữ liệu cá nhân của bạn.</li>
+          <li><strong>Rung và giữ màn hình sáng:</strong> để phản hồi khi bạn thao tác và để Ứng dụng hoạt động ổn định.</li>
+        </ul>
+        <p>Bạn có thể thu hồi các quyền này bất cứ lúc nào trong phần Cài đặt của thiết bị.</p>
+      </section>
+
+      <section>
+        <h2>4. Chia sẻ thông tin</h2>
+        <p>Chúng tôi <strong>không bán, cho thuê hay chia sẻ</strong> dữ liệu cá nhân của bạn với bất kỳ bên thứ ba nào.</p>
+        <p>Khi bạn chủ động bấm <strong>Chia sẻ</strong> một kỷ niệm, Ứng dụng sẽ mở bảng chia sẻ của hệ thống. Nội dung được gửi tới ứng dụng mà bạn chọn (ví dụ Messenger, Zalo) và tuân theo chính sách quyền riêng tư của ứng dụng đó.</p>
+      </section>
+
+      <section>
+        <h2>5. Dịch vụ của bên thứ ba</h2>
+        <p>Ứng dụng được phân phối qua Google Play và sử dụng một số thư viện của Google (như Google Play services). Các dịch vụ này có thể thu thập thông tin kỹ thuật tối thiểu về thiết bị và ứng dụng (ví dụ phiên bản hệ điều hành, thông tin sự cố) để vận hành và cải thiện dịch vụ, theo <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Google</a>.</p>
+      </section>
+
+      <section>
+        <h2>6. Lưu trữ, sao lưu và xoá dữ liệu</h2>
+        <ul>
+          <li>Dữ liệu được lưu trên thiết bị cho đến khi bạn xoá.</li>
+          <li><strong>Xoá một kỷ niệm:</strong> mở kỷ niệm và chọn Xoá.</li>
+          <li><strong>Xoá toàn bộ dữ liệu:</strong> vào Cài đặt thiết bị → Ứng dụng → Lovy → Bộ nhớ → Xoá dữ liệu, hoặc gỡ cài đặt Ứng dụng.</li>
+          <li>Nếu bạn bật tính năng sao lưu của Android, hệ thống có thể sao lưu dữ liệu Ứng dụng vào tài khoản Google của bạn. Bản sao lưu này do Google quản lý theo cài đặt của bạn, chúng tôi không truy cập được.</li>
+        </ul>
+        <p>Vì Lovy không có tài khoản và không lưu dữ liệu trên máy chủ, <strong>không có dữ liệu nào của bạn do chúng tôi nắm giữ</strong> cần yêu cầu xoá.</p>
+      </section>
+
+      <section>
+        <h2>7. Bảo mật</h2>
+        <p>Dữ liệu của bạn nằm trong vùng lưu trữ riêng của Ứng dụng trên thiết bị, được hệ điều hành bảo vệ khỏi các ứng dụng khác. Để bảo vệ kỷ niệm của mình, bạn nên đặt khoá màn hình cho thiết bị.</p>
+      </section>
+
+      <section>
+        <h2>8. Quyền riêng tư của trẻ em</h2>
+        <p>Ứng dụng không dành cho trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin của trẻ em. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin qua Ứng dụng, vui lòng liên hệ với chúng tôi.</p>
+      </section>
+
+      <section>
+        <h2>9. Thay đổi chính sách</h2>
+        <p>Chúng tôi có thể cập nhật chính sách này khi Ứng dụng thay đổi. Bản mới sẽ được đăng tại trang này kèm ngày cập nhật. Nếu thay đổi có ảnh hưởng đáng kể đến cách xử lý dữ liệu, chúng tôi sẽ thông báo trong Ứng dụng.</p>
+      </section>
+
+      <section>
+        <h2>10. Liên hệ</h2>
+        <div class="contact">
+          <p>Nếu bạn có câu hỏi về chính sách này, vui lòng liên hệ:</p>
+          <p><strong>JustCode</strong><br>
+          Email: <a href="mailto:nam15sep2003@gmail.com">nam15sep2003@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <main class="i18n" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: October 3, 2026 · Last updated: October 3, 2026</p>
+
+      <div class="summary">
+        <strong>Summary</strong>
+        <ul>
+          <li>Lovy <strong>does not require an account</strong> and has <strong>no server</strong> that stores your data.</li>
+          <li>Everything you enter, including photos, is <strong>stored only on your device</strong>.</li>
+          <li>We <strong>do not collect, sell, or share</strong> your personal data.</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>1. Introduction</h2>
+        <p>This policy explains how the <strong>Lovy</strong> app (the “App”), developed by <strong>JustCode</strong> (“we”, “us”), handles your information. Lovy helps couples keep their memories, count their days together, and save special moments.</p>
+        <p>By using the App, you agree to this policy.</p>
+      </section>
+
+      <section>
+        <h2>2. Information you enter in the App</h2>
+        <p>To use the App’s features, you may enter the following:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Type</th><th>Examples</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Couple profile</td>
+                <td>Names, nicknames, birthdays and profile photos of you and your partner; the date you started dating</td>
+                <td>Show your profile, count your days together, highlight special dates</td>
+              </tr>
+              <tr>
+                <td>Memories</td>
+                <td>Title, date, notes, photos</td>
+                <td>Save and display your memory journal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>All of this information is <strong>stored locally on your device</strong>. We do not operate any server that receives or stores it, so we <strong>cannot view, access, or recover</strong> your data.</p>
+        <p>The App does not collect your location, contacts, phone number, payment information, or advertising ID.</p>
+      </section>
+
+      <section>
+        <h2>3. Device permissions</h2>
+        <ul>
+          <li><strong>Camera:</strong> lets you take photos inside the App and add them to your memories. Photos are processed on your device and are not uploaded anywhere. The App does not record audio.</li>
+          <li><strong>Photo selection:</strong> the App uses the system photo picker. It only receives the photos you choose and does not access your whole photo library.</li>
+          <li><strong>Internet and network state:</strong> used to display content and open links you choose (such as a website or app store page). The App does not use the network to send your personal data.</li>
+          <li><strong>Vibration and wake lock:</strong> used for touch feedback and to keep the App running smoothly.</li>
+        </ul>
+        <p>You can revoke these permissions at any time in your device settings.</p>
+      </section>
+
+      <section>
+        <h2>4. Sharing</h2>
+        <p>We <strong>do not sell, rent, or share</strong> your personal data with any third party.</p>
+        <p>When you tap <strong>Share</strong> on a memory, the App opens your system share sheet. The content goes to the app you pick (for example Messenger or Zalo) and is subject to that app’s privacy policy.</p>
+      </section>
+
+      <section>
+        <h2>5. Third-party services</h2>
+        <p>The App is distributed through Google Play and uses some Google libraries (such as Google Play services). These services may collect minimal technical information about your device and the App (for example OS version or crash information) to operate and improve their services, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>6. Storage, backup, and deletion</h2>
+        <ul>
+          <li>Your data stays on your device until you delete it.</li>
+          <li><strong>Delete a memory:</strong> open the memory and choose Delete.</li>
+          <li><strong>Delete all data:</strong> go to device Settings → Apps → Lovy → Storage → Clear data, or uninstall the App.</li>
+          <li>If Android backup is turned on, the system may back up the App’s data to your Google account. That backup is managed by Google according to your settings; we cannot access it.</li>
+        </ul>
+        <p>Because Lovy has no accounts and no server-side storage, <strong>we hold no data about you</strong> that would need a deletion request.</p>
+      </section>
+
+      <section>
+        <h2>7. Security</h2>
+        <p>Your data is kept in the App’s private storage on your device, which the operating system protects from other apps. To protect your memories, we recommend using a screen lock on your device.</p>
+      </section>
+
+      <section>
+        <h2>8. Children’s privacy</h2>
+        <p>The App is not intended for children under 13, and we do not knowingly collect information from children. If you believe a child has provided information through the App, please contact us.</p>
+      </section>
+
+      <section>
+        <h2>9. Changes to this policy</h2>
+        <p>We may update this policy as the App changes. The new version will be posted on this page with an updated date. If a change significantly affects how your data is handled, we will let you know in the App.</p>
+      </section>
+
+      <section>
+        <h2>10. Contact us</h2>
+        <div class="contact">
+          <p>If you have any questions about this policy, please contact:</p>
+          <p><strong>JustCode</strong><br>
+          Email: <a href="mailto:nam15sep2003@gmail.com">nam15sep2003@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 JustCode · Lovy
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var buttons = document.querySelectorAll('.lang button');
+
+      function setLang(lang) {
+        root.classList.toggle('en', lang === 'en');
+        root.lang = lang;
+        document.title = lang === 'en' ? 'Lovy – Privacy Policy' : 'Lovy – Chính sách quyền riêng tư';
+        buttons.forEach(function (b) {
+          b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+        });
+        try { localStorage.setItem('lovy.privacy.lang', lang); } catch (e) {}
+      }
+
+      var initial = new URLSearchParams(location.search).get('lang');
+      if (!initial) {
+        try { initial = localStorage.getItem('lovy.privacy.lang'); } catch (e) {}
+      }
+      if (!initial) {
+        initial = (navigator.language || '').toLowerCase().indexOf('vi') === 0 ? 'vi' : 'en';
+      }
+      setLang(initial === 'en' ? 'en' : 'vi');
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.dataset.lang); });
+      });
+    })();
+  </script>
+</body>
+</html>
